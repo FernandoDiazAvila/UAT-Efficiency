@@ -1,0 +1,54 @@
+<!--                        Fernando Diaz Avila's Assignment
+    Planning:
+        To start this I can copy and paste my code from the previous assgnment and modify it to invovle loops.
+        Working my way down and review my notes when debugging any issues.
+
+    What do I need to have?;
+Implement Loops, Understand the role of JavaScript Functions, Write Functions, Comment Functions
+Understand Inline JavaScript, Understand External JavaScript. 
+**I need a seperat Javascript page and link it to this html one**
+    What can I do to improve for next time?
+I can add more style elements to make my countdown page more intersting.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UAT Space Program2.0</title> 
+        <style type="text/css">
+            p{
+                font-size:100p;
+                color: red;
+                height: 100px;
+                width: 250px;
+                align-items: center;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+        <h1 style="text-align:center; border:2px solid DodgerBlue;"
+        >UAT Space Program Launch system CountDown</h1>
+<!--Up to this line I will everything the same, I will link my JavaScript file 
+    in the header so the program can get the ode for the loop to display the current time-->
+    <script src="Efficiency.js"></script> 
+    </head>
+    
+<!--
+    Moved the script tags and function to the css.
+    #correction#; I learned from reviewing my notes that css is
+    for styling the page/program, even though I have already done so here. I will have to move it to Javascrupt. -->
+
+    <body style="text-align:center; background-color:white;">
+       
+        <img src="https://synchronic.uat.edu/courses/5371/files/732245/download?wrap=1" width="300px" height="300px">
+     
+        <br>
+        <button id="b" onclick = "RunCountDown()"> Launch</button> 
+        <p id= "DisplayCountDown">10</p>
+        <p id="DisplayBlastOff"></p> 
+        
+    </body>
+</html>
